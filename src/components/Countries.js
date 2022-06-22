@@ -17,7 +17,7 @@ fetchCountriesData()
 
 
     return (
-      <div>
+      <div className="Grid">
         {countries.map((country) => {
           const {
             name,
