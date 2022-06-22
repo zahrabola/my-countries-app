@@ -39,7 +39,7 @@ fetchCountriesData()
                 <div className="details">
                   <div className="Name">
                     <h2>{name}</h2>
-                    <h3>{nativeName}</h3>
+                    <h3 className="native">{nativeName}</h3>
                     <p>Capital City:</p> <h4>{capital}</h4>
                   </div>
                   <p>Region: {region}</p>

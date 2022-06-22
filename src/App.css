@@ -1,4 +1,4 @@
-.App {
+.app {
   text-align: center;
 }
 
@@ -9,6 +9,10 @@ body {
   background-color: hsl(151, 26%, 17%);
   color: white;
   transition: background-color 0.4s;
+}
+.native{
+  font-weight: 300;
+  font-style: italic;
 }
 h1{
   color: aliceblue;
