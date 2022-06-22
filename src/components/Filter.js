@@ -14,13 +14,8 @@ return (
         <FaSearch size="1.8em" />
       </div>
       <div>
-        <select
-          name="select"
-          id="select"
-          className="select"
- 
-        >
-        
+        <select name="select" id="select" className="select">
+          <option value="Categories">Category</option>
           <option value="Africa">Africa</option>
           <option value="Asia">Asia</option>
           <option value="Europe">Europe</option>
