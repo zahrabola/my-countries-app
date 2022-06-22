@@ -10,6 +10,9 @@ body {
   color: white;
   transition: background-color 0.4s;
 }
+h1{
+  color: aliceblue;
+}
 img {
 max-width: 100%;
 padding: 10px;
@@ -33,6 +36,7 @@ padding: 10px;
   padding: 20px;
   transition: background-color 0.4s;
   overflow: hidden;
+   box-shadow: 0 10px 15px  hsl(152, 18%, 14%);
 }
 
 .Gridcountries  article img{
@@ -44,7 +48,7 @@ padding: 10px;
   grid-template-columns: 1fr;
   gap: 40px;
    display: inline;
-
+ 
 }
 
 @media (min-width: 580px) {
@@ -74,3 +78,16 @@ padding: 10px;
 }
 
 
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  color: white;
+  background-color: hsl(151, 26%, 17%);
+  box-shadow: 0 5px 10px  hsl(152, 25%, 15%);
+}
+.header i {
+  cursor: pointer;
+}
