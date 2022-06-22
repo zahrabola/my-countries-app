@@ -45,7 +45,7 @@ fetchCountriesData()
                   <p>Region: {region}</p>
                   <p>Population: {population.toLocaleString()}</p>
                   <p>Calling Code: {callingCodes}</p>
-                  <p>Timezones: {timezones}</p>
+                  <p>Timezones:<br></br> {timezones}</p>
                 </div>
               </div>
             </article>
