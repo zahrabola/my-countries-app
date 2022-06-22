@@ -19,7 +19,7 @@ h1{
 }
 img {
 max-width: 100%;
-padding: 10px;
+padding-bottom: 10px;
 }
 .Gridcountries {
   padding: 50px 50px;
@@ -45,7 +45,7 @@ padding: 10px;
 
 .Gridcountries  article img{
   height: 200px;
-  width: 400px;
+  width:100%;
 }
 .Gridcountries {
   display: grid;
@@ -98,23 +98,33 @@ padding: 10px;
 section {
    display: inline;
 }
+
 .formcontrol{
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+ justify-content: center;
   padding: 10px;
   margin-left: 10%;
+  align-items: center;
+  letter-spacing: 0.5px;
 
 }
 input{
-  width: 70%;
+  width: 50%;
   height: 20px;
   border-radius: 10px;
 margin-right: 20px;
   padding: 20px;
+  letter-spacing: 0.5px;
+  
 }
 select{
+  margin: 20px;
  height: 40px; 
  border-radius: 10px;
-
+padding-left: 10px;
+align-items: center;
+}
+.searchbtn {
+ margin-right: 15px;
 }

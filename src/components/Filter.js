@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-
+import { FaSearch } from "react-icons/fa";
 const Filter = () => {
 return (
   <section className="filter">
@@ -10,14 +10,17 @@ return (
         id="search"
         placeholder=" searching ...."
       />
+      <div className="searchbtn">
+        <FaSearch size="1.8em" />
+      </div>
       <div>
         <select
           name="select"
           id="select"
           className="select"
-          placeholder="Category "
+ 
         >
-          <option value="Africa">Category </option>
+        
           <option value="Africa">Africa</option>
           <option value="Asia">Asia</option>
           <option value="Europe">Europe</option>
