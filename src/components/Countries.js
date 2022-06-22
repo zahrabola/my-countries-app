@@ -17,7 +17,7 @@ fetchCountriesData()
 
 
     return (
-      <div className="Grid">
+      <div className="Gridcountries">
         {countries.map((country) => {
           const {
             name,
@@ -29,7 +29,6 @@ fetchCountriesData()
             numericCode,
             timezones,
             callingCodes,
-
           } = country;
           return (
             <article key={numericCode}>
@@ -37,14 +36,14 @@ fetchCountriesData()
                 <div className="flag">
                   <img src={flag} alt={name} />
                 </div>
-                <div className="datails">
+                <div className="details">
                   <div className="Name">
                     <h2>{name}</h2>
                     <h3>{nativeName}</h3>
                     <p>Capital City:</p> <h4>{capital}</h4>
                   </div>
                   <p>Region: {region}</p>
-                  <p>population: {population.toLocaleString()}</p>
+                  <p>Population: {population.toLocaleString()}</p>
                   <p>Calling Code: {callingCodes}</p>
                   <p>Timezones: {timezones}</p>
                 </div>
@@ -53,7 +52,7 @@ fetchCountriesData()
           );
         })}
       </div>
-    )
+    );
     
     }
 

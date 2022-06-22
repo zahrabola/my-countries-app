@@ -1,7 +1,59 @@
 .App {
   text-align: center;
 }
-
 img {
-  max-width: 100%;
+max-width: 100%;
+padding: 10px;
 }
+.Gridcountries {
+  padding: 50px 50px;
+}
+.Gridcountries .flag img {
+  border-radius: 15px;
+}
+
+ .details {
+  border-radius: 0 0 5px 5px;
+padding: 10px;
+
+}
+
+.Gridcountries  article img{
+  height: 200px;
+  width: 400px;
+}
+.Gridcountries {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+   display: inline;
+
+}
+
+@media (min-width: 380px) {
+  .Gridcountries {
+    display: grid;
+  
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 40px;
+  }
+
+  .Gridcountries .details {
+    margin: -10px 0 0;
+  }
+}
+
+@media (min-width: 820px) {
+  .Gridcountries {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+      
+  }
+}
+
+@media (min-width: 1366px) {
+  .Gridcountries{
+       grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+
