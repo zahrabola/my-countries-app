@@ -9,11 +9,15 @@ import Header from './components/Header';
 function App() {
   return (
     <div className="App">
-      <h1 className='app'> Zahra Countries Map</h1>
-      
-      <Header/>
-      <Filter />
-      <Countries />
+      <h1 className="app"> Zahra Countries Map</h1>
+      <Router>
+        <Header />
+
+        <Route exact path="/">
+          <Filter />
+          <Countries />
+        </Route>
+      </Router>
     </div>
   );
 }
