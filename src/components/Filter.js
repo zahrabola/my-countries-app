@@ -1,6 +1,14 @@
 import React, { useEffect } from "react";
 import { FaSearch } from "react-icons/fa";
 const Filter = () => {
+
+
+
+
+
+
+
+  
 return (
   <section className="filter">
     <form className="formcontrol">

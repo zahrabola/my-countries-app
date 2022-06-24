@@ -4,7 +4,7 @@ const Header= () => {
  const changeTheme = () => {
    const header = document.querySelector(".header");
    const details = document.querySelectorAll(".details");
-   const uls = document.querySelectorAll("ul");
+  
 
    details.forEach((detail) => {
      detail.classList.toggle("light-theme");
