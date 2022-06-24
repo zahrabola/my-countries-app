@@ -10,12 +10,19 @@ body {
   color: white;
   transition: background-color 0.4s;
 }
+
+
+body.light-theme {
+  background-color: white;
+  color:hsl(120, 15%, 8%);
+}
+
 .native{
   font-weight: 00;
   font-style: italic;
 }
 h1{
-  color: aliceblue;
+  color: rgb(80, 125, 89);
 }
 img {
 max-width: 100%;
