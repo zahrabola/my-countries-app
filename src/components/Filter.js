@@ -1,8 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { FaSearch } from "react-icons/fa";
 const Filter = () => {
-
-
 
 
 
@@ -16,7 +14,9 @@ return (
         type="search"
         name="serach"
         id="search"
+
         placeholder=" searching ...."
+        
       />
       <div className="searchbtn">
         <FaSearch size="1.8em" />

@@ -14,7 +14,7 @@ function App() {
       <h1 className="app"> Zahra Countries Map</h1>
       <Router>
         <Header />
-        <Filter />
+       
         <Routes>
           <Route path="/" element={<Countries />} />
           <Route exact path="/countries/:name" element={<Country />}></Route>
