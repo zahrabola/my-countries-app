@@ -1,10 +1,12 @@
 import './App.css';
 import Countries from './components/Countries';
 import Filter from './components/Filter';
-import { BrowserRouter as Router, Route } from "react-router-dom";
-
-
 import Header from './components/Header';
+import Country from './components/Country';
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+
+
+
 
 function App() {
   return (
@@ -12,11 +14,12 @@ function App() {
       <h1 className="app"> Zahra Countries Map</h1>
       <Router>
         <Header />
+        <Filter />
+        <Routes>
+          <Route path="/" element={<Countries />} />
 
-        <Route exact path="/">
-          <Filter />
-          <Countries />
-        </Route>
+          <Route exact path="/countries/:name" element={<Country />}></Route>
+        </Routes>
       </Router>
     </div>
   );

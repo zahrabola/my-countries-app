@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 //https://restcountries.com/#api-endpoints-v3-all
 const url = "https://restcountries.com/v2/all";
 const Countries = () => {
@@ -45,7 +46,10 @@ fetchCountriesData()
                   <p>Region: {region}</p>
                   <p>Population: {population.toLocaleString()}</p>
                   <p>Calling Code: {callingCodes}</p>
-                  <p>Timezones:<br></br> {timezones}</p>
+                  <p>
+                    Timezones:<br></br> {timezones}
+                  </p>
+                  <Link to={`/countries/${name}`}> Learn More</Link>
                 </div>
               </div>
             </article>
