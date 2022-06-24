@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import {  FaTrash } from "react-icons/fa";
 //https://restcountries.com/#api-endpoints-v3-all
 const url = "https://restcountries.com/v2/all";
 const Countries = () => {
@@ -65,7 +66,7 @@ fetchCountriesData()
                       className="remove-btn"
                       onClick={() => removeCountry(numericCode)}
                     >
-                      Remove Country
+                      Remove Country <FaTrash size="1rem" />
                     </button>
                   </div>
                 </div>

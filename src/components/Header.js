@@ -8,7 +8,7 @@ return (
       <h1>Where in the world?</h1>
     </div>
     <div>
-      <FaMoon size="1.8em" /> Dark mode
+      <FaMoon classname="icon"  size="1.8em" /> Dark mode
     </div>
   </header>
 );
