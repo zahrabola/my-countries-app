@@ -54,9 +54,12 @@ fetchCountriesData()
                   <p>
                     Timezones:<br></br> {timezones}
                   </p>
-                  <Link to={`/countries/${name}`} className="link-btn">
-                    Learn More
-                  </Link>
+                  <button>
+                    <Link to={`/countries/${name}`} className="link-btn">
+                      Learn More
+                    </Link>
+                  </button>
+
                   <div>
                     <button
                       className="remove-btn"
