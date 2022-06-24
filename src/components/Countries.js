@@ -15,7 +15,12 @@ const [countries, setCountries ] = useState([])
 useEffect(() => {
 fetchCountriesData()
 }, []);
+////////////////////////////////////////////
 
+ const removeCountry = (numericCode) => {
+  const newCountry = countries.filter((country) => country.numericCode !== numericCode)
+  setCountries(newCountry)
+}
 
     return (
       <div className="Gridcountries">
@@ -49,10 +54,17 @@ fetchCountriesData()
                   <p>
                     Timezones:<br></br> {timezones}
                   </p>
-                  <p>
-                    Timezones:<br></br> {timezones}
-                  </p>
-                  <Link to={`/countries/${name}`}> Learn More</Link>
+                  <Link to={`/countries/${name}`} className="link-btn">
+                    Learn More
+                  </Link>
+                  <div>
+                    <button
+                      className="remove-btn"
+                      onClick={() => removeCountry(numericCode)}
+                    >
+                      Remove Country
+                    </button>
+                  </div>
                 </div>
               </div>
             </article>

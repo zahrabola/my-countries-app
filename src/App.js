@@ -17,7 +17,6 @@ function App() {
         <Filter />
         <Routes>
           <Route path="/" element={<Countries />} />
-
           <Route exact path="/countries/:name" element={<Country />}></Route>
         </Routes>
       </Router>
