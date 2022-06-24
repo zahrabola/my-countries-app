@@ -49,6 +49,9 @@ fetchCountriesData()
                   <p>
                     Timezones:<br></br> {timezones}
                   </p>
+                  <p>
+                    Timezones:<br></br> {timezones}
+                  </p>
                   <Link to={`/countries/${name}`}> Learn More</Link>
                 </div>
               </div>
