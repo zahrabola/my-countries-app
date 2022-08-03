@@ -42,7 +42,7 @@ const Country = () => {
             currencies,
             languages,
             latlng,
-            borders,
+        
           } = c;
 
           return (

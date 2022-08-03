@@ -1,6 +1,6 @@
 import './App.css';
 import Countries from './components/Countries';
-import Filter from './components/Filter';
+//import Filter from './components/Filter';
 import Header from './components/Header';
 import Country from './components/Country';
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
